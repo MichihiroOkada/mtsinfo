@@ -1,4 +1,4 @@
-{
+$config = {
     :logoutput => true,
     :default_dir => ENV[ "HOME" ] + "/",
     :show_basedir => true,

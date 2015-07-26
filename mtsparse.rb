@@ -1,10 +1,11 @@
 require 'find'
+require './config'
 
 load 'log.rb'
 
 # read config file
-config = eval File.read 'config.rb'
-$log = Log.new(config[ :logoutput ])
+#config = eval File.read 'config.rb'
+$log = Log.new($config[ :logoutput ])
 
 READ_SIZE = 500
 
